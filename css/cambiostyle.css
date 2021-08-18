@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+    padding: 5%;
+}
+/*Navegador*/
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    background-color: #FFA07A;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 20px 0px;
+    box-sizing: border-box;
+    position:sticky;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    float:right;
+} 
+header img {
+    width: 50px;
+}
+#principalNav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+#principalNav li{
+    margin: 20px;
+    padding: 10px;
+}
+#principalNav li:hover{
+    color: white;
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+/*banner*/
+
+#bannerSection {
+    width: 100%;
+    height: 80vh;
+}
+#bannerSection div{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+#bannerSection img{
+    width: 100%;
+    height: 70vh;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    float: right;
+}
+.tituloPrincipal {
+    position: absolute;
+    top: 95%;
+    right: 10%;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/*Sección de productos*/
+#seccionDeproduc img{
+    display: grid;
+}
+#seccionDeproduc {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 50px;
+}
+
+#subtituloUno {
+    border: black solid;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+.cajaImagenes {
+    border: black solid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+}
+.cajaImagenes img {
+    width: 90px;
+}
+#productosEstaciones {
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+}
+.productEst {
+   border: black solid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   display: flex;
+   justify-content: space-between;
+}
+.productEst img {
+    width: 90px;
+}
+footer {
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 360px) {
+    header{
+        background-color: blueviolet;
+    }
+}
